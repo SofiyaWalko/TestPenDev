@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thock — механические клавиатуры ручной сборки</title>
+  <meta name="description" content="Thock K68 — механические клавиатуры ручной сборки: смазанные свитчи, глубокий звук, гарантия 2 года.">
+  <meta name="theme-color" content="#F3F4F6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2317181B'/%3E%3Cpath d='M9 10h14M16 10v13' stroke='%23fff' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.001M10 8h.001M14 8h.001M18 8h.001M8 12h.001M12 12h.001M16 12h.001M7 16h10"/></symbol>
+    <symbol id="i-magnet" viewBox="0 0 24 24"><path d="m6 15-4-4 6.75-6.77a7.79 7.79 0 0 1 11 11L13 22l-4-4 6.39-6.36a2.14 2.14 0 0 0-3-3L6 15"/><path d="m5 8 4 4"/><path d="m12 15 4 4"/></symbol>
+    <symbol id="i-knob" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/><path d="M6 12c0-1.7.7-3.2 1.8-4.2"/><path d="M18 12c0 1.7-.7 3.2-1.8 4.2"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-loader" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header glass">
+    <a class="logo" href="#top" aria-label="Thock — на главную">THOCK</a>
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+      <a href="#catalog">Каталог</a>
+      <a href="#how">Как мы собираем</a>
+      <a href="#reviews">Отзывы</a>
+    </nav>
+    <div class="site-header__actions">
+      <a class="btn btn--dark btn--sm" href="#order">Заказать</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+        <svg class="icon icon--menu" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon--close" aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--light" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--gray" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Механическая клавиатура · ручная сборка</p>
+          <h1 class="hero__title" id="hero-title">Thock<br>K68</h1>
+          <p class="hero__lead">Новый стандарт ручной сборки и тихого, глубокого звука.</p>
+          <div class="hero__cta">
+            <a class="btn btn--dark" href="#catalog">Выбрать клавиатуру <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+            <a class="btn btn--glass" href="#how">Как мы собираем</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <img class="hero__image" src="assets/img/hero.webp" width="1536" height="1024" fetchpriority="high" alt="Механическая клавиатура Thock K68 в дымчатом прозрачном корпусе с алюминиевой ручкой">
+          <ul class="hero__chips">
+            <li class="chip glass chip--a"><svg class="icon" aria-hidden="true"><use href="#i-keyboard"/></svg>68 клавиш</li>
+            <li class="chip glass chip--b"><svg class="icon" aria-hidden="true"><use href="#i-magnet"/></svg>Магнитные свитчи</li>
+            <li class="chip glass chip--c"><svg class="icon" aria-hidden="true"><use href="#i-knob"/></svg>Алюминиевая ручка</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container hero__tags">
+        <p class="eyebrow">Тише шум. Больше контроля.</p>
+        <p class="eyebrow">Прецизионность на виду</p>
+      </div>
+    </section>
+
+    <section class="section section--benefits" id="benefits" aria-labelledby="benefits-title">
+      <div class="glow glow--light" aria-hidden="true"></div>
+      <div class="container">
+        <div class="architecture">
+          <div class="architecture__copy" data-reveal>
+            <p class="eyebrow">Архитектура</p>
+            <h2 class="section-title" id="benefits-title">Собрано руками<br>Настроено на слух</h2>
+            <p class="architecture__lead">Каждый слой раскрывает точность внутри.</p>
+            <a class="link-arrow" href="#how">Как мы собираем <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+          <figure class="architecture__visual" data-reveal>
+            <img src="assets/img/exploded.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Разнесённая сборка клавиатуры: кейкапы, прозрачная верхняя крышка, свитчи, плата и нижний корпус">
+          </figure>
+          <ol class="parts">
+            <li><span>01</span>Крышка</li>
+            <li><span>02</span>Кейкапы</li>
+            <li><span>03</span>Свитчи</li>
+            <li><span>04</span>Плата</li>
+            <li><span>05</span>Корпус</li>
+          </ol>
+        </div>
+
+        <div class="carousel carousel--benefits" data-carousel data-carousel-autoplay data-carousel-label="Преимущества" data-reveal>
+          <ul class="benefits slider" data-carousel-track>
+            <li class="card glass">
+              <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-hand"/></svg></span>
+              <h3 class="card__title">Ручная сборка</h3>
+              <p>Каждую плату собирает мастер. Только проверенный контакт.</p>
+            </li>
+            <li class="card glass">
+              <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-droplet"/></svg></span>
+              <h3 class="card__title">Смазка свитчей</h3>
+              <p>Свитч за свитчем: без скрипа и хруста, только мягкий ход.</p>
+            </li>
+            <li class="card glass">
+              <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield-check"/></svg></span>
+              <h3 class="card__title">Гарантия 2 года</h3>
+              <p>Сломался переключатель — заменим бесплатно.</p>
+            </li>
+            <li class="card glass">
+              <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-volume"/></svg></span>
+              <h3 class="card__title">Звук Thock</h3>
+              <p>Глубокий и тёплый звук вместо звонкого щелчка.</p>
+            </li>
+          </ul>
+          <div class="carousel__controls" hidden>
+            <div class="carousel__dots glass glass--strong" role="group" aria-label="Выбор слайда"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="glow glow--left" aria-hidden="true"></div>
+      <div class="glow glow--right" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Каталог</p>
+            <h2 class="section-title" id="catalog-title">Три клавиатуры<br>Один характер</h2>
+          </div>
+          <p class="eyebrow">Партия №07 · 48 шт.</p>
+        </header>
+
+        <ul class="models">
+          <li class="model glass" data-reveal>
+            <div class="model__stage">
+              <span class="chip-index glass">01 / 03</span>
+              <img src="assets/img/model-smoke.webp" width="1024" height="683" loading="lazy" decoding="async" alt="Клавиатура Thock 65 Smoke в дымчатом поликарбонатном корпусе">
+            </div>
+            <div class="model__head">
+              <div>
+                <h3 class="model__name">Thock 65</h3>
+                <p class="model__tone"><span class="swatch swatch--smoke" aria-hidden="true"></span>Smoke</p>
+              </div>
+              <p class="model__price">14&nbsp;900&nbsp;₽</p>
+            </div>
+            <dl class="specs">
+              <div><dt>Свитчи</dt><dd>Магнитные, смазанные</dd></div>
+              <div><dt>Корпус</dt><dd>Дымчатый поликарбонат</dd></div>
+              <div><dt>Раскладка</dt><dd>65%, 68 клавиш</dd></div>
+            </dl>
+            <a class="btn btn--dark btn--block" href="#order">Заказать <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </li>
+
+          <li class="model glass" data-reveal>
+            <div class="model__stage">
+              <span class="chip-index glass">02 / 03</span>
+              <span class="badge">Хит партии</span>
+              <img src="assets/img/model-frost.webp" width="1024" height="683" loading="lazy" decoding="async" alt="Клавиатура Thock 75 Frost в матовом белом алюминиевом корпусе">
+            </div>
+            <div class="model__head">
+              <div>
+                <h3 class="model__name">Thock 75</h3>
+                <p class="model__tone"><span class="swatch swatch--frost" aria-hidden="true"></span>Frost</p>
+              </div>
+              <p class="model__price">17&nbsp;900&nbsp;₽</p>
+            </div>
+            <dl class="specs">
+              <div><dt>Свитчи</dt><dd>Tactile, щелчок</dd></div>
+              <div><dt>Корпус</dt><dd>Алюминий, матовый</dd></div>
+              <div><dt>Раскладка</dt><dd>75%, 82 клавиши</dd></div>
+            </dl>
+            <a class="btn btn--dark btn--block" href="#order">Заказать <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </li>
+
+          <li class="model glass" data-reveal>
+            <div class="model__stage">
+              <span class="chip-index glass">03 / 03</span>
+              <img src="assets/img/model-graphite.webp" width="1024" height="683" loading="lazy" decoding="async" alt="Клавиатура Thock 80 Graphite в графитовом алюминиевом корпусе">
+            </div>
+            <div class="model__head">
+              <div>
+                <h3 class="model__name">Thock 80</h3>
+                <p class="model__tone"><span class="swatch swatch--graphite" aria-hidden="true"></span>Graphite</p>
+              </div>
+              <p class="model__price">19&nbsp;900&nbsp;₽</p>
+            </div>
+            <dl class="specs">
+              <div><dt>Свитчи</dt><dd>Linear, глубокие</dd></div>
+              <div><dt>Корпус</dt><dd>Графитовый алюминий</dd></div>
+              <div><dt>Раскладка</dt><dd>80%, TKL</dd></div>
+            </dl>
+            <a class="btn btn--dark btn--block" href="#order">Заказать <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--how" id="how" aria-labelledby="how-title">
+      <div class="glow glow--light" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Как это работает</p>
+            <h2 class="section-title" id="how-title">Три шага до<br>вашего Thock</h2>
+          </div>
+        </header>
+
+        <div class="carousel carousel--steps" data-carousel data-carousel-autoplay data-carousel-label="Шаги" data-reveal>
+          <ol class="steps slider" data-carousel-track>
+            <li class="step glass">
+              <div class="step__top">
+                <span class="step__number" aria-hidden="true">01</span>
+                <span class="step__dot" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+              <div class="step__media"><img src="assets/img/step-1.webp" width="1024" height="512" loading="lazy" decoding="async" alt="Кейкапы разных цветов, переключатель и карточка выбора"></div>
+              <h3 class="step__title">Выбираешь</h3>
+              <p>Выбери модель и цвет. Напиши, какой звук хочешь — глубокий или звонкий.</p>
+            </li>
+            <li class="step glass">
+              <div class="step__top">
+                <span class="step__number" aria-hidden="true">02</span>
+                <span class="step__dot" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+              <div class="step__media"><img src="assets/img/step-2.webp" width="1024" height="683" loading="lazy" decoding="async" alt="Инструменты сборки: пинцет, свитчи, смазка, отвёртка и металлическая плата"></div>
+              <h3 class="step__title">Собираем</h3>
+              <p>Мастер собирает плату, смазывает свитчи и настраивает звук. Это 5–7 дней.</p>
+            </li>
+            <li class="step glass">
+              <div class="step__top">
+                <span class="step__number" aria-hidden="true">03</span>
+                <span class="step__dot" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+              </div>
+              <div class="step__media"><img src="assets/img/step-3.webp" width="1024" height="683" loading="lazy" decoding="async" alt="Открытая коробка с клавиатурой и мешочком запасных кейкапов"></div>
+              <h3 class="step__title">Получаешь</h3>
+              <p>Курьер привозит по России. В подарок — запасной набор кейкапов.</p>
+            </li>
+          </ol>
+          <div class="carousel__controls" hidden>
+            <div class="carousel__dots glass glass--strong" role="group" aria-label="Выбор слайда"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--reviews" id="reviews" aria-labelledby="reviews-title">
+      <img class="reviews__bg" src="assets/img/workspace.webp" width="1672" height="941" loading="lazy" decoding="async" alt="">
+      <div class="reviews__fade" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <div>
+            <p class="eyebrow">Отзывы</p>
+            <h2 class="section-title" id="reviews-title">Слышно сразу<br>Пишут владельцы</h2>
+          </div>
+        </header>
+
+        <div class="carousel" data-carousel data-carousel-autoplay data-carousel-label="Отзывы покупателей" data-reveal>
+          <ul class="reviews slider" data-carousel-track>
+            <li class="review glass glass--strong">
+              <figure>
+                <div class="stars" role="img" aria-label="Оценка 5 из 5">
+                  <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                </div>
+                <blockquote><p>«Печатаю на ней месяц и до сих пор нажимаю клавиши ради звука.»</p></blockquote>
+                <figcaption class="author">
+                  <img src="assets/img/avatar-artem.webp" width="160" height="160" loading="lazy" decoding="async" alt="">
+                  <span><strong>Артём, 27</strong>UI-дизайнер · Thock 65</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="review glass glass--strong">
+              <figure>
+                <div class="stars" role="img" aria-label="Оценка 5 из 5">
+                  <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                </div>
+                <blockquote><p>«Свитчи без скрипа. Сравнивала с кастомом за вдвое больше — на слух не уступает.»</p></blockquote>
+                <figcaption class="author">
+                  <img src="assets/img/avatar-maria.webp" width="160" height="160" loading="lazy" decoding="async" alt="">
+                  <span><strong>Мария, 31</strong>Разработчица · Thock 75</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="review glass glass--strong">
+              <figure>
+                <div class="stars" role="img" aria-label="Оценка 5 из 5">
+                  <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                </div>
+                <blockquote><p>«Пришла за неделю с запасными кейкапами. Выглядит как арт-объект на столе.»</p></blockquote>
+                <figcaption class="author">
+                  <img src="assets/img/avatar-ilya.webp" width="160" height="160" loading="lazy" decoding="async" alt="">
+                  <span><strong>Илья, 24</strong>Студент · Thock 80</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="review glass glass--strong">
+              <figure>
+                <div class="stars" role="img" aria-label="Оценка 5 из 5">
+                  <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                </div>
+                <blockquote><p>«Звук глубокий, как на старых клавиатурах, только без шума. Коллеги по звонкам перестали жаловаться.»</p></blockquote>
+                <figcaption class="author">
+                  <img src="assets/img/avatar-maria.webp" width="160" height="160" loading="lazy" decoding="async" alt="">
+                  <span><strong>Дарья, 29</strong>Продакт-менеджер · Thock 65</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="review glass glass--strong">
+              <figure>
+                <div class="stars" role="img" aria-label="Оценка 5 из 5">
+                  <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                </div>
+                <blockquote><p>«Заказал Graphite: собрана аккуратно, ни одного люфта. Ручка громкости оказалась самой удобной мелочью.»</p></blockquote>
+                <figcaption class="author">
+                  <img src="assets/img/avatar-artem.webp" width="160" height="160" loading="lazy" decoding="async" alt="">
+                  <span><strong>Кирилл, 33</strong>Разработчик · Thock 80</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="review glass glass--strong">
+              <figure>
+                <div class="stars" role="img" aria-label="Оценка 5 из 5">
+                  <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+                </div>
+                <blockquote><p>«Тактильные свитчи — ровно то, что искал. Работаю весь день, и пальцы не устают.»</p></blockquote>
+                <figcaption class="author">
+                  <img src="assets/img/avatar-ilya.webp" width="160" height="160" loading="lazy" decoding="async" alt="">
+                  <span><strong>Никита, 26</strong>Фотограф · Thock 75</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <div class="carousel__controls" hidden>
+            <div class="carousel__dots glass glass--strong" role="group" aria-label="Выбор слайда"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta" id="order" aria-labelledby="order-title">
+      <div class="glow glow--light" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta glass" data-reveal>
+          <div class="cta__copy">
+            <p class="eyebrow">Партия №08</p>
+            <h2 class="cta__title" id="order-title">Следующая партия — уже скоро</h2>
+            <p class="cta__lead">Оставь email — напишем один раз, когда откроем набор. Без рассылок и спама.</p>
+
+            <form class="form" id="subscribe-form" novalidate>
+              <label class="form__label" for="email">Email</label>
+              <div class="field">
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                <input class="field__input" id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="email-status email-hint">
+              </div>
+              <p class="form__status" id="email-status" role="status" aria-live="polite" hidden>
+                <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg><span></span>
+              </p>
+              <button class="btn btn--dark btn--block" type="submit">
+                <svg class="icon icon--spin" aria-hidden="true"><use href="#i-loader"/></svg>
+                <span class="btn__label">Сообщить о новой партии</span>
+              </button>
+              <p class="form__hint" id="email-hint">Отписаться можно в любой момент одной ссылкой.</p>
+            </form>
+          </div>
+          <div class="cta__visual">
+            <img src="assets/img/hero.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Клавиатура Thock K68 парит над поверхностью">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__row">
+        <a class="logo" href="#top" aria-label="Thock — наверх">THOCK</a>
+        <p class="eyebrow">Прецизионность на виду</p>
+        <nav class="site-footer__nav" aria-label="Нижняя навигация">
+          <a href="#catalog">Каталог</a>
+          <a href="#how">Как мы собираем</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#benefits">Гарантия</a>
+        </nav>
+        <ul class="socials">
+          <li><a class="social glass" href="#" aria-label="Telegram"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg></a></li>
+          <li><a class="social glass" href="#" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a class="social glass" href="#" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 Thock. Учебный проект.</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
